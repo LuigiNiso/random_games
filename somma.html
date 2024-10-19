@@ -4,11 +4,185 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <title>Somma Dadi</title>
 </head>
 
 <body>
-    <h1>Cooming soon!</h1>
+    <div class="somme rosso">
+        <div class="totalRed">0</div>
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">18</div>
+            <div class="pts">20pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">17</div>
+            <div class="pts">15pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">16</div>
+            <div class="pts">10pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">15</div>
+            <div class="pts">7pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">14</div>
+            <div class="pts">5pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">13</div>
+            <div class="pts">3pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">12</div>
+            <div class="pts">2pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">11</div>
+            <div class="pts">1pt.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">10</div>
+            <div class="pts">1pt.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">9</div>
+            <div class="pts">2pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">8</div>
+            <div class="pts">3pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">7</div>
+            <div class="pts">5pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">6</div>
+            <div class="pts">7pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">5</div>
+            <div class="pts">10pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">4</div>
+            <div class="pts">15pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveRed(this)">
+            <div class="value">3</div>
+            <div class="pts">20pts.</div>
+        </div>
+    </div>
+    <div class="banco">
+        <button id="rollDice" onclick="rollDice()">ROLL</button>
+        <div class="dice"><img src="images/6.png" alt=""></div>
+        <div class="dice"><img src="images/6.png" alt=""></div>
+        <div class="dice"><img src="images/6.png" alt=""></div>
+        <div class="diceSum"></div>
+    </div>
+    <div class="somme blu">
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">18</div>
+            <div class="pts">20pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">17</div>
+            <div class="pts">15pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">16</div>
+            <div class="pts">10pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">15</div>
+            <div class="pts">7pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">14</div>
+            <div class="pts">5pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">13</div>
+            <div class="pts">3pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">12</div>
+            <div class="pts">2pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">11</div>
+            <div class="pts">1pt.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">10</div>
+            <div class="pts">1pt.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">9</div>
+            <div class="pts">2pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">8</div>
+            <div class="pts">3pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">7</div>
+            <div class="pts">5pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">6</div>
+            <div class="pts">7pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">5</div>
+            <div class="pts">10pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">4</div>
+            <div class="pts">15pts.</div>
+        </div>
+
+        <div class="sum" onclick="toggleActiveBlue(this)">
+            <div class="value">3</div>
+            <div class="pts">20pts.</div>
+        </div>
+
+        <div class="totalBlue">0</div>
+    </div>
+
+    <script src="sumApp.js"></script>
 </body>
 
 </html>
