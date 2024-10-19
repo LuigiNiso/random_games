@@ -1,0 +1,136 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: rgb(56, 56, 56);
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+p {
+    width: 70%;
+    padding: 3vw;
+    color: white;
+    font-size: 2.5vh;
+    text-align: center;
+    font-family: "Outline", sans-serif;
+    font-weight: lighter;
+}
+
+.game {
+    width: 90%;
+    height: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.estrazione {
+    width: 13%;
+    border-radius: 5%;
+    display: flex;
+    align-items: center;
+    font-family: "Outline", monospace;
+    color: rgb(59, 59, 59);
+    font-size: 6vh;
+    justify-content: center;
+    flex-direction: column;
+    aspect-ratio: 1/1;
+    background-color: whitesmoke;
+    position: absolute;
+    overflow: hidden;
+}
+
+.estrazione .numero {
+    height: 65%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.estrazione button {
+    bottom: 0;
+    cursor: pointer;
+    width: 100%;
+    height: 35%;
+    font-size: 2vh;
+}
+
+.team {
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.team input {
+    width: 30%;
+    aspect-ratio: 1/1;
+    background-color: rgba(0, 0, 0, 0.193);
+    border: none;
+    border-radius: 10px;
+    font-size: 13vh;
+    text-align: center;
+    color: white;
+}
+
+input[type=number]::-webkit-outer-spin-button,
+input[type=number]::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+/* Remove spinner buttons for Firefox */
+input[type=number] {
+    -moz-appearance: textfield;
+}
+
+input:focus {
+    outline: none;
+}
+
+.rosso {
+    background-color: rgb(255, 75, 75);
+    border-radius: 15px 0 0 15px;
+}
+
+.blu {
+    background-color: rgb(67, 149, 255);
+    border-radius: 0px 15px 15px 0px;
+}
+
+.points {
+    position: absolute;
+    top: 0;
+    width: 6%;
+    aspect-ratio: 1/1;
+    background-color: rgba(255, 255, 255, 0.552);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Outline', sans-serif;
+    font-size: 3vw;
+}
+
+.bluep {
+    right: 0;
+    border-radius: 0 15px 0 15px;
+    color: rgb(52, 121, 212);
+}
+
+.redp {
+    left: 0;
+    border-radius: 15px 0 15px 0;
+    color: rgb(202, 57, 57);
+}
